@@ -1509,8 +1509,7 @@ function create_each_block$1(ctx) {
 			if (!mounted) {
 				dispose = [
 					listen(span1, "blur", /*sliderBlurHandle*/ ctx[29]),
-					listen(span1, "focus", /*sliderFocusHandle*/ ctx[30]),
-					listen(span1, "keydown", /*sliderKeydown*/ ctx[31])
+					listen(span1, "focus", /*sliderFocusHandle*/ ctx[30])
 				];
 
 				mounted = true;
@@ -1744,7 +1743,6 @@ function create_fragment$1(ctx) {
 					listen(window, "mousedown", /*bodyInteractStart*/ ctx[34]),
 					listen(window, "mousemove", /*bodyInteract*/ ctx[35]),
 					listen(window, "mouseup", /*bodyMouseUp*/ ctx[36]),
-					listen(window, "keydown", /*bodyKeyDown*/ ctx[38]),
 					listen(div, "mousedown", /*sliderInteractStart*/ ctx[32]),
 					listen(div, "mouseup", /*sliderInteractEnd*/ ctx[33]),
 				];

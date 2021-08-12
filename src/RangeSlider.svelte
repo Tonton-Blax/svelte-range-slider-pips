@@ -762,7 +762,6 @@
       data-handle={index}
       on:blur={sliderBlurHandle}
       on:focus={sliderFocusHandle}
-      on:keydown={sliderKeydown}
       style="{vertical ? 'top' : 'left'}: {$springPositions[index]}%; z-index: {activeHandle === index ? 3 : 2};"
       aria-valuemin={range === true && index === 1 ? values[0] : min}
       aria-valuemax={range === true && index === 0 ? values[1] : max}
@@ -811,5 +810,4 @@
 <svelte:window
   on:mousedown={bodyInteractStart}
   on:mousemove={bodyInteract}
-  on:mouseup={bodyMouseUp}
-  on:keydown={bodyKeyDown} />
+  on:mouseup={bodyMouseUp} />
