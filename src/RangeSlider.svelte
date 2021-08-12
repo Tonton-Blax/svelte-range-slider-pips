@@ -751,8 +751,6 @@
   class:pip-labels={all === 'label' || first === 'label' || last === 'label' || rest === 'label'}
   on:mousedown={sliderInteractStart}
   on:mouseup={sliderInteractEnd}
-  on:touchstart|preventDefault={sliderInteractStart}
-  on:touchend|preventDefault={sliderInteractEnd}
 >
   {#each values as value, index}
     <span
@@ -812,9 +810,6 @@
 
 <svelte:window
   on:mousedown={bodyInteractStart}
-  on:touchstart={bodyInteractStart}
   on:mousemove={bodyInteract}
-  on:touchmove={bodyInteract}
   on:mouseup={bodyMouseUp}
-  on:touchend={bodyTouchEnd}
   on:keydown={bodyKeyDown} />

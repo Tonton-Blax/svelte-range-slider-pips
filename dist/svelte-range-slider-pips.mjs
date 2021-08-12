@@ -1742,16 +1742,11 @@ function create_fragment$1(ctx) {
 			if (!mounted) {
 				dispose = [
 					listen(window, "mousedown", /*bodyInteractStart*/ ctx[34]),
-					listen(window, "touchstart", /*bodyInteractStart*/ ctx[34]),
 					listen(window, "mousemove", /*bodyInteract*/ ctx[35]),
-					listen(window, "touchmove", /*bodyInteract*/ ctx[35]),
 					listen(window, "mouseup", /*bodyMouseUp*/ ctx[36]),
-					listen(window, "touchend", /*bodyTouchEnd*/ ctx[37]),
 					listen(window, "keydown", /*bodyKeyDown*/ ctx[38]),
 					listen(div, "mousedown", /*sliderInteractStart*/ ctx[32]),
 					listen(div, "mouseup", /*sliderInteractEnd*/ ctx[33]),
-					listen(div, "touchstart", prevent_default(/*sliderInteractStart*/ ctx[32])),
-					listen(div, "touchend", prevent_default(/*sliderInteractEnd*/ ctx[33]))
 				];
 
 				mounted = true;
