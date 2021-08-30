@@ -314,6 +314,7 @@
     // if the value has changed, update it
     if (values[index] !== value) {
       values[index] = value;
+      values = [...values];
     }
 
     // fire the change event when the handle moves,
