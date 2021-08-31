@@ -292,6 +292,7 @@
     // align & clamp the value so we're not doing extra
     // calculation on an out-of-range value down below
     value = alignValueToStep(value);
+    values = [...values];
     // if this is a range slider
     if (range) {
       // restrict the handles of a range-slider from
